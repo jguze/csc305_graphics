@@ -1,0 +1,48 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1187\cocoasubrtf400
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f0\fs24 \cf0 JUSTIN GUZE\
+V00723799\
+CSC 305\
+ASSIGNMENT 2\
+\
+INTRODUCTION\
+This README document will demonstrate how to use the interface in assignment 2, as well as the underlying code structure\
+\
+LAYOUT\
+A window with 4 widgets appears to the user. The top-left widget is the 3D view of the points in the system. As points are added, they appear on this screen. You can notice that there is an axis, a ground plane, the points, and the catmull-rom spline itself.\
+The other 3 widgets are flat 2D planes that make up the 3D view. The top-right widget is the XY plane, the bottom-left is the XZ plane, and the bottom right is the YZ plane.\
+\
+INPUT\
+Clicking on any of the 2D widgets will place a point on the screen on that plane. Clicking on the XY plane will place an XY point there, and the Z value will be zero. It will show up on the 3D view with a Z value of 0, and all other widgets will display it as well. Clicking on a point and moving it in the 2D view will move the point around in all views.\
+Left-clicking and dragging left to right on the 3D view will rotate around the Y axis. Left-clicking and dragging up and down will rotate around the Z axis. Middle clicking and dragging left to right will rotate around the X axis. Right clicking and dragging up and down will change the scale of the 3D view, which simply moves the camera farther back or forwards.\
+\
+KEYBOARD INPUT\
+There are many keyboard inputs to the system They are outlined as follows:\
+\
+ARROW_KEY_LEFT: Scroll through the list of points, and focuses the camera on that point. Will focus on 0,0,0 if there are no points.\
+\
+ARROW_KEY_RIGHT: Scroll forwards through the list of points, and focus the camera on that point. Will focus on 0,0,0 if there are no points.\
+\
+ARROW_KEY_UP: Increase the tension of the cat mull rom spline\
+\
+ARROW_KEY_DOWN: Decrease the tension of the catmull-rom spline\
+\
+KEY_W: Moves the viewing point of the camera down the Z axis by 1.\
+KEY_S: Moves the viewing point of the camera up the Z axis by 1.\
+KEY_A: Moves the viewing point of the camera down the X axis by 1.\
+KEY_D: Moves the viewing point of the camera up the X axis by 1.\
+KEY_Q: Moves the viewing point of the camera down the Y axis by 1.\
+KEY_E: Moves the viewing point of the camera up the Y axis by 1.\
+\
+KEY_1: Toggles the axis on and off\
+KEY_2: Toggles the XZ ground plane on and off\
+KEY_3: Toggles the catmull-rom spline on and off\
+KEY_4: Toggles the line between points on and off\
+KEY_5: Toggles the points on and off\
+KEY_6: Toggles the full planar grid (XY, XZ, YZ) on and off\
+KEY_7: Toggles the XY plane on and off\
+KEY_8: Toggles the YZ plane on and off}
